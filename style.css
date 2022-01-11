@@ -1,0 +1,133 @@
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 200px;
+}
+
+[class*="parallax"]{
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.parallax-1 {
+    /*background-color: tomato;*/
+}
+
+.parallax-2 {
+    background-color: #000;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.capa-fondo {
+    background-image: url(/Images/fondo.png);
+    transform: translateZ(-3000px) scale(16.2);
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.capa-1 {
+    background-image: url(/Images/capa1.png);
+    transform: translateZ(-1200px) scale(6.5);
+    z-index: 1;
+    background-size: cover;
+}
+
+.capa-2 {
+    background-image: url(/Images/capa2.png);
+    transform: translateZ(-1000px) scale(6.1);
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+}
+
+.capa-3 {
+    background-image: url(/Images/capa3.png);
+    transform: translateZ(-700px) scale(4.6);
+    z-index: 3;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.capa-4 {
+    background-image: url(/Images/capa4.png);
+    transform: translateZ(-500px) scale(3.6);
+    z-index: 4;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa-4 h1 {
+    font-size: 9rem;
+}
+
+.capa-5 {
+    background-image: url(/Images/capa5.png);
+    transform: translateZ(-300px) scale(2.6);
+    z-index: 5;
+    background-position: center;
+    background-size: cover;
+}
+
+.capa-6 {
+    background-image: url(/Images/capa6.png);
+    transform: translateZ(-100px) scale(1.6);
+    z-index: 5;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.parallax-2 {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parallax-2 h1{
+	font-size: 9rem;
+}
+
+
+@media screen and ( max-width: 770px) {
+    
+    .capa-4 h1 {
+        font-size: 6rem;
+    }
+
+}
+
+@media screen and ( max-width: 500px) {
+    
+    .capa-4 h1 {
+        font-size: 4rem;
+    }
+
+}
